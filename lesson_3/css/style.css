@@ -1,0 +1,51 @@
+@import url("reset.css");
+
+
+.title {
+    color: #ff7b00
+}
+
+img + h1 {
+    color: red;
+}
+
+.list ul > li {
+    color: blue;
+}
+
+.gen-info {
+    color: black;
+}
+
+.list > li {
+    color: green;
+}
+
+.text-1 p ~ p {
+    color: purple;
+}
+
+[class*="text"] {
+    color: grey;
+}
+
+div.text-2 h3 + p {
+    color: brown;
+}
+
+.footer-list li + li {
+    color: green;
+}
+
+#ukraine {
+    color: yellowgreen;
+}
+
+#ukraine p span {
+    color: red;
+}
+
+.text {
+    color:aqua;
+}
+
