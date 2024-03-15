@@ -1,0 +1,106 @@
+/* FONTS Quicksand - full font from plugin Google Fonts*/
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700);
+
+/* FONTS Quicksand - different font-weight from site Google Fonts  */
+/* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap'); */
+
+/* Локальне підключення шрифтів */
+/* font-family: "Proxima Nova", sans-serif; */
+@import url("fonts.css");
+
+/* reset style */
+@import url("reset.css");
+
+/* ПЕРША ЧАСТИНА - повторення матеріалу з уроку */
+body h1,
+body .text {
+  font-family: "Quicksand", sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 1.33333333; /* 64/48 */
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #2e2d2d97;
+  font-weight: 700;
+  color: rgba(48, 91, 172, 0.7);
+  text-shadow: 1px 1px 10px #333333;
+  letter-spacing: 5px;
+  word-spacing: 20px;
+}
+
+.text {
+  color: #333333;
+  font-size: 25px;
+  line-height: 1.92; /* 48/25 */
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+.p-1 {
+  text-align: center;
+  text-decoration: underline dashed rgba(0, 0, 255, 0.5);
+  text-transform: capitalize;
+}
+
+.p-2 {
+  text-decoration: underline double rgba(0, 255, 119, 0.5);
+  text-transform: lowercase;
+}
+
+.p-3 {
+  text-align: right;
+  text-decoration: line-through dotted rgba(48, 91, 172, 0.7);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* ДРУГА ЧАСТИНА - блок з макету Фігми */
+
+body .article {
+  font-family: "Proxima Nova", sans-serif;
+  color: #2b2929;
+  font-weight: 400;
+}
+
+.article-title {
+  font-size: 40px;
+  text-align: center;
+  line-height: 1.2; /* 48/40 */
+  text-transform: none;
+}
+
+.article p {
+  line-height: 1.875; /* 30/16 */
+}
+
+/* ДРУГА ЧАСТИНА - другий блок з макету Фігми */
+
+.article-2 {
+  color: #2b2929;
+  font-weight: 400;
+}
+
+.article-title-2 {
+  font-size: 40px;
+  line-height: 1.2; /* 48/40 */
+}
+
+.article-2 p {
+  line-height: 1.875; /* 30/16 */
+}
+
+.article-2 h3 {
+  font-size: 20px;
+  line-height: 1.4; /* 28/20 */
+}
+
+.article-2 ul li {
+  line-height: 1.875; /* 30/16 */
+}
