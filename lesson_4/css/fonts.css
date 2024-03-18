@@ -1,39 +1,31 @@
 @font-face {
-    font-family: 'ProximaNova-Bold';
-    src: url(./ProximaNova-Bold.woff2) format('woff2');
-    font-weight: 700;
-	font-style: normal;
-	font-display: swap;
-  }
+  font-family: "ProximaNova";
+  src: url(./ProximaNova-Bold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
-    font-family: 'ProximaNova-Light';
-    src: url(./ProximaNova-Light.woff2) format('woff2');
-    font-weight: 300;
-	font-style: normal;
-	font-display: swap;
-  }
+  font-family: "ProximaNova";
+  src: url(./ProximaNova-Light.woff2) format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
-    font-family: 'ProximaNova-Regular';
-    src: url(./ProximaNova-Regular.woff2) format('woff2');
-    font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-  }
+  font-family: "ProximaNova";
+  src: url(./ProximaNova-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
-    font-family: 'ProximaNova-Semibold';
-    src: url(./ProximaNova-Semibold.woff2) format('woff2');
-    font-weight: 600;
-	font-style: normal;
-	font-display: swap;
-  }
-  
-/* 100 - thin 
-300 - light 
-400 - Regular (normal) (за замовчуванням)
-500 - medium 
-600 - semibold 
-700 - bold 
-900 - black */
+  font-family: "ProximaNova";
+  src: url(./ProximaNova-Semibold.woff2) format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
