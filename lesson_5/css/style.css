@@ -1,0 +1,246 @@
+/* Практика уроку  */
+/* FONTS */
+@import url(fonts.css);
+
+/* reset style */
+@import url("reset.css");
+
+header h1 {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #333333;
+    background-color: #e0b048;
+    border: 1px solid #333333;
+    padding: 10px;
+}
+
+main .practice-lesson {
+    font-family: "Quicksand", sans-serif;
+    color: #333333;
+}
+
+.practice-lesson h2 {
+    font-size: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+
+.block {
+    height: 100px;
+	background-color: #77608d;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.block-1 {
+    height: 100px;
+    margin: 20px;
+    background-color: #77608d;
+    overflow: visible;
+}
+
+.block-2 {
+    overflow: scroll;
+    max-height: 100px;
+    margin: 20px;
+    background-color: #77608d;
+    width: 70%;
+}
+
+.inline {
+	background-color: #7a956b;
+}
+.inline-block {
+	background-color: #794f45;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.blocks {
+    background-color: #706d6d;
+    padding: 10px;
+}
+
+.inline-block {
+    max-width: 500px;
+    min-width: 100px;
+}
+
+/* схлопування */
+.block-10 {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 100px;
+    margin-top: -10px;
+}
+
+.block-20 {
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+}
+
+.block-30 {
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    margin-left: -10px;
+}
+
+.block-40 {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    margin: 0 auto;
+}
+
+.inline {
+    width: 50%;
+}
+
+/* Верстка з макету - 1*/
+.maket-1 {
+    background-color: #1e28321b;
+}
+
+.maket-1__wrapper {
+    padding: 100px 0px 70px 0px;
+    text-align: center;
+
+}
+
+.maket-1 .maket-1__title {
+    font-size: 50px;
+    line-height: normal;
+    text-transform: capitalize;
+    font-family: "Roboto",sans-serif;
+    font-weight: 500;
+}
+
+.maket-1 .maket-1__img-row {
+    margin-top: 60px;
+}
+
+.maket-1 .img-row-item {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 0 12px;
+}
+
+/* Верстка з макету - 2*/
+
+.maket-2 {
+    background-color: #B1B1B1;
+    font-family: "Proxima Nova",sans-serif;
+    color: #2b2929;
+
+}
+
+.maket-2__wrapper {
+    padding-top: 75px;
+    padding-bottom: 40px;
+    max-width: 1070px;
+    margin: 0 auto;
+}
+
+.maket-2__title {
+  font-size: 40px;
+  text-align: center;
+  font-family: "Proxima Nova",sans-serif;
+  line-height: 1.20; /* 48px/40 */
+  margin-bottom: 40px;
+}
+
+.maket-2__img {
+    margin-bottom: 40px;
+}
+
+.maket-2__text {
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.875; /* 30px/16 */
+    margin-bottom: 40px;
+}
+
+.maket-2__text > p {
+    margin-bottom: 10px;
+}
+
+.maket-2__sub-title {
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.40; /* 28px/20 */
+    margin-bottom: 30px;
+}
+
+.maket-2__list {
+    line-height: 1.875; /* 30px/16 */
+    margin-bottom: 40px;
+}
+
+.maket-2__list .item {
+    margin-bottom: 20px;
+}
+
+.maket-2__summurize {
+    text-align: left;
+    line-height: 1.875; /* 30px/16 */
+}
+
+.maket-3 {
+    background-color: #b1b1b133;
+    color: #2b2929;
+    font-family: "Proxima Nova",sans-serif;
+}
+
+.maket-3__wrapper {
+    padding: 70px 0;
+    max-width: 1340px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.maket-3__title {
+    font-size: 40px;
+    line-height: 1.20; /* 48px/40 */
+    margin-bottom: 40px;
+}
+
+.maket-3__item {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 300px;
+    margin-right: 30px;
+}
+
+.maket-3__item .item-img img{
+    width: 170px;
+    height: 170px;
+    margin-bottom: 20px;
+}
+
+.maket-3__item .item-title {
+    font-size: 26px;
+    line-height: 1.30769231; /* 34px/26 */
+    margin-bottom: 20px;
+}
+
+.maket-3__item .item-text {
+    line-height: 1.875; /* 30px/16 */
+}
+
+footer {
+    text-align: center;
+    background-color: #bfce3667;
+    color: #706d6d;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px #ffffff;
+}
