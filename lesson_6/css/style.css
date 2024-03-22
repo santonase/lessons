@@ -1,0 +1,309 @@
+/* FONTS */
+@import url(fonts.css);
+
+/* reset style */
+@import url("reset.css");
+
+/* Практика матеріалу заняття №6 */
+ body {
+	font-family: "Noto Sans Khojki", sans-serif;
+	background-color: #333;
+	color: #fff;
+}
+
+.l6-practice {
+    text-align: center;
+}
+
+.l6-practice__title {
+    font-size: 40px;
+    background-color: #92c57c;
+    min-height: 50px;
+    margin-bottom: 20px;
+}
+
+.l6-practice__blocks {
+    margin: 20px;
+    padding: 10px;
+    border-top: 5px solid #fff;
+    border-left: 5px double #fff;
+    border-right: 5px dashed #fff;
+    border-bottom: 5px dotted #fff;
+    text-align: center;
+    outline: 5px solid yellowgreen;
+    border-radius: 10px;
+}
+.l6-practice__block-1 {
+    display: inline-block;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    background-color: #2e908b;
+    border: 3px solid #699e29;
+    box-shadow:
+    inset 0 0 20px 0px rgba(0, 0, 0, 0.8)
+}
+.l6-practice__block-2 {
+    display: inline-block;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    background-color: #2e908b;
+    border: 3px solid #699e29;
+    box-shadow: 5px 5px 5px 10px rgba(102, 106, 99, 0.8);
+    opacity: 0.5;
+}
+.l6-practice__block-3 {
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    background-color: transparent;
+    border-top: 4px solid #243e8a;
+    border-radius: 50%;
+    background-image: linear-gradient(90deg, #ff3f3a 0%, #3a3dff 50%, #f75e05 100%);
+}
+
+.l6-practice__block-4 {
+    margin: 20px;
+    width: 1000px;
+    height: 1000px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+
+    /* background-image: url("../img/honey.jpg");
+	background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+
+    /* background:
+		url("../img/honey.jpg") center / 100px no-repeat,
+		linear-gradient(90deg, #ff3f3a 0%, #3a3dff 50%, #f75e05 100%) center / 100px no-repeat,
+		#77608d url("../img/icon.png") center / 200px no-repeat scroll; */
+
+        background: url("../img/honey.jpg") scroll no-repeat center / cover;
+
+}
+
+.l6-practice__img {
+    padding: 10px;
+    width: 300px;
+    background-color: red;
+    border-style: solid;
+    border-color: #699e29;
+    border-width: 2px;
+    /* visibility: hidden; */
+    /* opacity: 0; */
+    /* display: none; */
+}
+
+.l6-practice__text {
+    border-inline: 5px double #d81a1a;
+    border-block: 5px solid #1515af;
+    background-color: rgb(89, 89, 143);
+    border-radius: 50%;
+}
+
+.l6-practice__text:hover {
+    border-color: transparent;
+}
+
+.l6-practice__link {
+	color: yellow;
+	border-bottom: 5px dotted;
+}
+
+.l6-practice__link:hover {
+	border-color: transparent;
+}
+
+.l6-practice__img:hover {
+    border-color: transparent;
+}
+
+.l6-practice__link:focus {
+	outline: 2px dotted rgb(0, 255, 64);
+    text-shadow: 1px 1px 30px #fff;
+}
+
+.arrow-left {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-right: 100px solid green;
+	border-bottom: 50px solid transparent;
+}
+.arrow-right {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-left: 100px solid green;
+	border-bottom: 50px solid transparent;
+
+    border-right: 200px solid green;
+    border-top: 100px solid;
+    border-bottom: 100px solid;
+}
+.arrow-top {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid green;
+    margin-bottom: 10px;
+}
+.arrow-bottom {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid green;
+}
+
+
+.l6-practice__list {
+    text-align: left;
+}
+
+.l6-practice__list .item {
+	background: url("../img/honey.jpg") 0 0 / 15px no-repeat;
+	padding-left: 20px;
+	margin-bottom: 10px;
+	min-height: 14px;
+}
+
+/* Доопрацювання макету з попереднього заняття (додавання background img для list > li */
+.maket-2 {
+    background-color: #B1B1B1;
+    font-family: "Proxima Nova",sans-serif;
+    color: #2b2929;
+
+}
+
+.maket-2__wrapper {
+    padding-top: 75px;
+    padding-bottom: 40px;
+    max-width: 1070px;
+    margin: 0 auto;
+}
+
+.maket-2__title {
+  font-size: 40px;
+  text-align: center;
+  font-family: "Proxima Nova",sans-serif;
+  line-height: 1.20; /* 48px/40 */
+  margin-bottom: 40px;
+}
+
+.maket-2__img {
+    margin-bottom: 40px;
+}
+
+.maket-2__text {
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.875; /* 30px/16 */
+    margin-bottom: 40px;
+}
+
+.maket-2__text > p {
+    margin-bottom: 10px;
+}
+
+.maket-2__sub-title {
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.40; /* 28px/20 */
+    margin-bottom: 30px;
+}
+
+.maket-2__list {
+    line-height: 1.875; /* 30px/16 */
+    margin-bottom: 40px;
+}
+
+.maket-2__list .item {
+    background: url("../img/Vector.png") no-repeat;
+    background-size: 32px 32px;
+    padding-left: 47px;
+    margin-bottom: 20px;
+}
+
+.maket-2__summurize {
+    text-align: left;
+    line-height: 1.875; /* 30px/16 */
+}
+
+/* макет EduPay */
+
+.explore {
+    font-family: "Quicksand",sans-serif;
+    background: url(../img/explore/explore_bg3.png) 0 -27px / cover no-repeat;
+}
+.explore__container {
+    padding: 0 80px;
+}
+
+.explore__left-block {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 600px;
+    margin-right: 125px;
+}
+
+.explore__title {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.20; /* 48px/40 */
+    margin-bottom: 24px;
+}
+
+.explore__text {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.60; /* 32px/20 */
+    margin-bottom: 24px;
+}
+
+.explore__button {
+    color: #0d1216;
+    font-weight: 700;
+    line-height: 1.5625; /* 25px/16 */
+    background: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+}
+
+.explore__right-block {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ecommerce {
+    font-family: "Roboto",sans-serif;
+    color: #000;
+    /* background: url(../img/collections/collections_bg.png) 0 0 / cover no-repeat; */
+    background: #fff;
+}
+
+.ecommerce__container {
+    padding: 300px 300px 60px 300px;
+}
+
+.ecommerce__left-block {
+    display: inline-block;
+    vertical-align: middle;
+}
+.ecommerce__title {
+}
+.ecommerce__sub-title {
+}
+.ecommerce__button {
+}
+
+.ecommerce__right-block {
+    display: inline-block;
+    vertical-align: middle;
+}
