@@ -61,6 +61,7 @@
     border-top: 4px solid #243e8a;
     border-radius: 50%;
     background-image: linear-gradient(90deg, #ff3f3a 0%, #3a3dff 50%, #f75e05 100%);
+
 }
 
 .l6-practice__block-4 {
@@ -238,10 +239,11 @@
 
 .explore {
     font-family: "Quicksand",sans-serif;
-    background: url(../img/explore/explore_bg3.png) 0 -27px / cover no-repeat;
+    background: url(../img/explore/bg.jpeg) 0 0 / cover no-repeat;
 }
 .explore__container {
-    padding: 0 80px;
+    max-width: 1320px;
+    margin: 0 auto;
 }
 
 .explore__left-block {
@@ -283,27 +285,61 @@
 
 .ecommerce {
     font-family: "Roboto",sans-serif;
-    color: #000;
-    /* background: url(../img/collections/collections_bg.png) 0 0 / cover no-repeat; */
-    background: #fff;
+    background: url(../img/collections/bg_flowers.png) 0 0 / cover no-repeat;
+    background-color: #fff;
+    padding: 81px;
 }
 
 .ecommerce__container {
-    padding: 300px 300px 60px 300px;
+    max-width: 1320;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .ecommerce__left-block {
     display: inline-block;
     vertical-align: middle;
+    max-width: 682px;
+    margin-right: 98px;
+    text-align: left;
 }
 .ecommerce__title {
+    color: #000;
+    font-size: 74px;
+    font-weight: 300;
+    line-height: 0.74324324; /* 55/74 */
+    margin-bottom: 52px;
+    text-transform: capitalize;
 }
-.ecommerce__sub-title {
+
+.ecommerce__text {
+    color: #000;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.83333333; /* 55px/30 */
+    margin-bottom: 66px;
 }
-.ecommerce__button {
+
+.ecommerce__button-link {
+    background: url(../img/collections/icon_bag.png) 26px / 30px no-repeat;
+    color: #fff;
+    padding: 19px 26px 19px 64px;
+    max-width: 223px;
+    background-color: #1e2832;
+    font-size: 29px;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: center;
 }
 
 .ecommerce__right-block {
     display: inline-block;
     vertical-align: middle;
+}
+
+.ecommerce__img {
+    box-shadow: 18px 20px 1px #fff,
+                18px 20px 1px rgb(0, 0, 0);
+    border-radius: 0 0 160px 0;
 }
