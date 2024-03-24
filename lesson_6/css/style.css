@@ -273,9 +273,14 @@
     color: #0d1216;
     font-weight: 700;
     line-height: 1.5625; /* 25px/16 */
-    background: #fff;
+    background-color: #fff;
     padding: 12px 20px;
     border-radius: 8px;
+}
+
+.explore__button > p {
+    padding-left: 23px;
+    background: url(../img/explore/hat_x3.png) 0 2px / 16px no-repeat;
 }
 
 .explore__right-block {
@@ -283,10 +288,14 @@
     vertical-align: middle;
 }
 
+/* макет EcommerceMinimal */
+
 .ecommerce {
     font-family: "Roboto",sans-serif;
-    background: url(../img/collections/bg_flowers.png) 0 0 / cover no-repeat;
-    background-color: #fff;
+    background: 
+    url(../img/collections/flower-left.png) 0 480px no-repeat,
+    url(../img/collections/flower-right.png) 100% 225px no-repeat;
+    background-color: #F4F4F5;
     padding: 81px;
 }
 
@@ -300,7 +309,7 @@
     display: inline-block;
     vertical-align: middle;
     max-width: 682px;
-    margin-right: 98px;
+    margin-right: 116px; /* +16px вправо через здвиг картинки вліво на 18px від ecommerce__right-block */
     text-align: left;
 }
 .ecommerce__title {
@@ -316,7 +325,6 @@
     color: #000;
     text-transform: capitalize;
     font-size: 30px;
-    font-weight: 400;
     line-height: 1.83333333; /* 55px/30 */
     margin-bottom: 66px;
 }
@@ -336,10 +344,10 @@
 .ecommerce__right-block {
     display: inline-block;
     vertical-align: middle;
+    border: 2px solid #B7B7B8;
+    border-radius: 160px 0;
 }
 
 .ecommerce__img {
-    box-shadow: 18px 20px 1px #fff,
-                18px 20px 1px rgb(0, 0, 0);
-    border-radius: 0 0 160px 0;
+    margin: -20px 18px 20px -18px;
 }
