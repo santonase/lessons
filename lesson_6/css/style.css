@@ -224,8 +224,8 @@
 }
 
 .maket-2__list .item {
-    background: url("../img/Vector.png") no-repeat;
-    background-size: 32px 32px;
+    min-height: 32px;
+    background: url("../img/Vector.png") 0 0 / 32px 32px no-repeat;
     padding-left: 47px;
     margin-bottom: 20px;
 }
@@ -251,6 +251,7 @@
     vertical-align: middle;
     max-width: 600px;
     margin-right: 125px;
+    padding: 121px 0;
 }
 
 .explore__title {
@@ -286,6 +287,11 @@
 .explore__right-block {
     display: inline-block;
     vertical-align: middle;
+    max-width: 547px;
+}
+
+.explore_img {
+    width: 100%;
 }
 
 /* макет EcommerceMinimal */
@@ -293,8 +299,8 @@
 .ecommerce {
     font-family: "Roboto",sans-serif;
     background: 
-    url(../img/collections/flower-left.png) 0 480px no-repeat,
-    url(../img/collections/flower-right.png) 100% 225px no-repeat;
+    url(../img/collections/flower-left.png) left bottom 100px no-repeat,
+    url(../img/collections/flower-right.png) right bottom 180px no-repeat;
     background-color: #F4F4F5;
     padding: 81px;
 }
@@ -346,8 +352,11 @@
     vertical-align: middle;
     border: 2px solid #B7B7B8;
     border-radius: 160px 0;
+    max-width: 442px;
 }
 
 .ecommerce__img {
+    width: 100%;
+    border-radius: 160px 0;
     margin: -20px 18px 20px -18px;
 }
