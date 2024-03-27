@@ -408,7 +408,7 @@ footer {
     padding: 10px 64.5px;
 }
 
-.footer .list .item:nth-child(5) {
+.footer .list .item .button {
     font-size: 18px;
     font-family: "Orbitron",sans-serif;
     font-weight: 900;
