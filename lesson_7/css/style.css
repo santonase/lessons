@@ -105,7 +105,7 @@
     background-color: #b76666;
 }
 
-.text-2:has(span) {
+p:has(span) {
     background-color: #402cd8;
 }
 
