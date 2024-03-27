@@ -1,0 +1,339 @@
+/* FONTS */
+@import url(fonts.css);
+
+/* reset style */
+@import url("reset.css");
+
+/* Практика матеріалу заняття №6 */
+
+
+
+
+
+header .title  {
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    background-color: #084e87;
+    color: #fff;
+    padding: 20px;
+}
+
+.practice {
+    text-align: center;
+    background-color: #848181;
+    font-size: 30px;
+}
+
+.links {
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.hover:hover {
+    border: 2px solid yellowgreen;
+    border-radius: 5px;
+}
+
+.active:active {
+    color: yellowgreen;
+}
+
+.focus:focus {
+    background-color: yellowgreen;
+}
+
+.visited:visited {
+    background-color: yellowgreen;
+    color: yellowgreen;
+}
+
+#targeted {
+    visibility: hidden;
+}
+
+#targeted:target {
+    visibility: visible;
+  }
+
+.text > p {
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+.text span:first-child {
+    text-transform: uppercase;
+}
+
+.text span:last-of-type {
+    color: aquamarine;
+}
+
+.text p:last-child {
+    text-transform: capitalize;
+}
+
+.text p:first-of-type {
+    color: yellowgreen;
+}
+
+.text p:nth-child(4) {
+    color: red;
+}
+
+.text p:nth-child(odd) {
+    background-color: #dd4d4d45;
+}
+
+.text p:nth-child(even) {
+    background-color: #86e88d45;
+}
+
+.text-1 p:not(:last-child) {
+	background-color: #4a7c6062;
+}
+
+.text-1 {
+    margin-bottom: 20px;
+}
+
+.text-2 {
+    margin-bottom: 20px;
+}
+
+.text-2 p:nth-child(3n+1) {
+    background-color: #b76666;
+}
+
+.text-2 p:has(span) {
+    background-color: #b3d82c;
+}
+
+.text-2 span::before,
+.text-2 span::after {
+    content: "12";
+}
+
+/*========== GAME ===========*/
+
+.game {
+    padding: 50px 200px;
+}
+
+.game h2 {
+    color: #333333a9;
+    font-size: 50px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+}
+
+.game .container {
+    font-size: 0;
+    text-align: left;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 30px;
+  }
+
+  .box-1 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+  }
+
+  .box-2 {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+  }
+
+  .box-3 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin-left: 300px;
+  }
+
+  .box-3:last-of-type {
+    background-color: rgb(188, 73, 73);
+  }
+
+  .box:not(:first-child) {
+    visibility: hidden;
+  }
+
+  .win {
+    visibility: hidden;
+    color: #848181;
+    font-size: 70px;
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .box:hover + .box,
+  .box:hover {
+    visibility: visible;
+  }
+
+  .box-3:last-of-type:hover + .win {
+    visibility: visible;
+  }
+
+
+  /* 
+  Доопрацювання макету з попереднього заняття 
+  */
+.maket-2 {
+    background-color: #B1B1B1;
+    font-family: "Proxima Nova",sans-serif;
+    color: #2b2929;
+
+}
+
+.maket-2__wrapper {
+    padding-top: 75px;
+    padding-bottom: 40px;
+    max-width: 1070px;
+    margin: 0 auto;
+}
+
+.maket-2__title {
+  font-size: 40px;
+  text-align: center;
+  font-family: "Proxima Nova",sans-serif;
+  line-height: 1.20; /* 48px/40 */
+  margin-bottom: 40px;
+}
+
+.maket-2__img {
+    margin-bottom: 40px;
+}
+
+.maket-2__text {
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.875; /* 30px/16 */
+    margin-bottom: 40px;
+}
+
+.maket-2__text > p {
+    margin-bottom: 10px;
+}
+
+.maket-2__sub-title {
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.40; /* 28px/20 */
+    margin-bottom: 30px;
+}
+
+.maket-2__list {
+    line-height: 1.875; /* 30px/16 */
+    margin-bottom: 40px;
+}
+
+.maket-2__list .item {
+    min-height: 32px;
+    background: url("../img/Vector.png") 0 0 / 32px 32px no-repeat;
+    padding-left: 47px;
+    margin-bottom: 20px;
+}
+
+.maket-2__summurize {
+    text-align: left;
+    line-height: 1.875; /* 30px/16 */
+}
+
+.body > *:last-child {
+    margin-bottom: 0px;
+}
+
+/* =========
+maket "Portfolio" section "About me"
+============*/
+
+.about-me {
+    background-color: #000000;
+}
+.about-me .container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 120px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.about-me .title {
+    display: inline-block;
+    font-size: 60px;
+    font-family: "Exo",sans-serif;
+    font-weight: 700;
+    line-height: 1.0; /* 70px/70 */
+    text-transform: uppercase;
+}
+
+.about-me .title:after {
+    display: block;
+    content: "";
+    height: 1px;
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(66,255,0,1) 50%, rgba(36,0,255,1) 100%);
+    width: 401px; /* 133% */
+    margin: 20px 0;
+}
+
+.about-me .text__wrapper {
+    margin: 0 auto;
+    max-width: 920px;
+    margin-bottom: 60px;
+}
+
+.about-me .text {
+    font-size: 18px;
+    font-family: "Exo",sans-serif;
+    font-weight: 400;
+    line-height: 2.22222222; /* 40px/18 */
+    letter-spacing: -1px;
+    text-transform: capitalize;
+}
+
+.about-me .skills {
+    font-size: 20px;
+    text-align: left;
+    font-family: "Orbitron",sans-serif;
+    font-weight: 500;
+    line-height: 1.25; /* 25px/20 */
+}
+
+.skills__item {
+    display: inline-block;
+}
+
+.skills__item::after {
+    content: "";
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(66,255,0,1) 50%, rgba(36,0,255,1) 100%);
+    margin: 0 60px;
+}
+
+
+
+
+.body > *:last-child {
+    margin-bottom: 0px;
+}
+
+footer {
+    font-family: "Exo", sans-serif;
+    text-align: center;
+    background-color: #084e87;
+    color: #fff;
+    padding: 20px;
+    font-size: 30px;
+  }
