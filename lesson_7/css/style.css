@@ -5,6 +5,7 @@
 @import url("reset.css");
 
 /* Практика матеріалу заняття №6 */
+
 .practice .title  {
     text-align: center;
     font-family: "Exo", sans-serif;
@@ -206,6 +207,8 @@ p:has(> span) {
 
 .maket-2__img {
     margin-bottom: 40px;
+    width: 100%;
+    border-radius: 10px;
 }
 
 .maket-2__text {
@@ -215,7 +218,7 @@ p:has(> span) {
     margin-bottom: 40px;
 }
 
-.maket-2__text > p {
+.maket-2__text > p:not(:last-child) {
     margin-bottom: 10px;
 }
 
@@ -235,6 +238,10 @@ p:has(> span) {
     min-height: 32px;
     background: url("../img/Vector.png") 0 0 / 32px 32px no-repeat;
     padding-left: 47px;
+    /* margin-bottom: 20px; */
+}
+
+.maket-2__list .item:not(:last-child) {
     margin-bottom: 20px;
 }
 
@@ -243,7 +250,7 @@ p:has(> span) {
     line-height: 1.875; /* 30px/16 */
 }
 
-.body > *:last-child {
+.article > *:last-child {
     margin-bottom: 0px;
 }
 
@@ -255,6 +262,7 @@ maket "Portfolio" section "About me"
     background-color: #000000;
 }
 .about-me .container {
+    overflow: hidden;
     max-width: 1160px;
     margin: 0 auto;
     padding: 120px 0;
@@ -269,6 +277,7 @@ maket "Portfolio" section "About me"
     font-weight: 700;
     line-height: 1.0; /* 70px/70 */
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .about-me .title:after {
@@ -277,7 +286,7 @@ maket "Portfolio" section "About me"
     height: 1px;
     background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(66,255,0,1) 50%, rgba(36,0,255,1) 100%);
     width: 133%; /* 401px - 133% */
-    margin: 20px 0 20px -16.5%;
+    margin: 20px 0 0 -16.5%;
 }
 
 .about-me .text__wrapper {
@@ -327,7 +336,9 @@ footer {
   }
 
 .footer__container {
-    padding: 110px 120px;
+    padding: 110px 0;
+    margin: 0 auto;
+    max-width: 995px;
 }
 
 .footer__title  {
@@ -409,15 +420,20 @@ footer {
     line-height: 1.11111111; /* 20px/18 */
     text-transform: uppercase;
     padding: 12.5px 40px;
-    margin-left: 40px;
+    /* margin-left: 40px; */
     box-shadow: 0 4px 10px 0 rgba(0,0,0,.25);
     background-color: #6f00a9;
     transition: all 0.3s;
 }
 
+.footer .list .item:last-child {
+    margin-left: 40px;
+}
+
 .footer .list .item .button:hover {
-    font-size: 15px;
-    box-shadow: 5px 5px 10px #8c36bb;
+    color: #777;
+    box-shadow: 5px 5px 10px #8c36bb,
+                -5px -5px 10px #8c36bb;
 }
 
 .footer .contact-list__item {
@@ -452,6 +468,7 @@ footer {
     margin-right: 20px;
 }
 
-.body > *:last-child {
-    margin-bottom: 0px;
+.footer .contact-list a:hover {
+    color: #777;
+    text-decoration: underline;
 }
