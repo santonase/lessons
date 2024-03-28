@@ -416,6 +416,7 @@ footer {
 }
 
 .footer .list .item .button:hover {
+    font-size: 15px;
     box-shadow: 5px 5px 10px #8c36bb;
 }
 
