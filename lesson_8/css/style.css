@@ -31,8 +31,7 @@ body {
 
 .page__container p img:not(:last-child) {
     vertical-align: middle;
-    max-height: 300px;
-    max-width: 500px;
+    max-width: 50%;
 }
 
 .question {
