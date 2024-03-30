@@ -29,10 +29,17 @@ body {
     margin-bottom: 50px;
 }
 
+.page__container p:hover {
+    box-shadow: 0 0 10px #333;
+    border-radius: 10px;
+}
+
 .page__container p img:not(:last-child) {
     vertical-align: middle;
     max-width: 50%;
 }
+
+
 
 .question {
     padding: 15px 0;
