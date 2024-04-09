@@ -1,0 +1,246 @@
+/* FONTS */
+@import url(fonts.css);
+
+/* reset style */
+@import url("reset.css");
+
+body {
+    font-family: "Proxima Nova", sans-serif;
+    background-color: #fff;
+}
+
+header {
+    /* padding: 20px 0; */
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 20px;
+    z-index: 50;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 48px;
+    padding: 10px;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Card item  */
+.card__item {
+    max-width: 250px;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
+    background: url(../img/bg.webp) 0 bottom no-repeat;
+}
+
+.page__text {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.card__title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #2B2929;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4; /* 28px/20 */
+}
+.card__count {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #B1B1B1;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4; /* 28px/20 */
+}
+.card__link-img {
+}
+
+.card__image {
+    max-width: 100%;
+}
+
+.card__link-arrow {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.card__arrow {
+    width: 50px;
+    height: 50px;
+}
+
+/* Batton  */
+
+.menu-button {
+}
+
+.button {
+    border-radius: 8px;
+    background: #FFBC57;
+    padding: 11px 20px;
+}
+
+.button::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+    background: url(../img/menu.svg) 0 0 no-repeat;
+    transition: all 0.3s;
+}
+
+.button:hover::before {
+    background: url(../img/close-catalog.svg) 0 0 no-repeat;
+    transform: rotate(180deg);
+}
+
+.button:active {
+    background-color: #c4872b;
+    transition: all 0.7s;
+}
+
+
+.button__text {
+    color: #fff;
+    vertical-align: middle;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.26315789; /* 24px/19 */
+}
+
+/* Menu  */
+.menu {
+    position: relative;
+    display: none;
+    z-index: 5;
+}
+
+.menu:target {
+    display: block;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    background-color: #f8f8f8;
+    border-radius: 8px 0 0 8px;
+    min-width: 300px;
+}
+.menu__item {
+    position: relative;
+}
+
+.menu__item:hover {
+    background-color: #ffbc57;
+}
+
+.menu__link {
+    color: #2B2929;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4; /* 28px/20 */
+    padding: 10px 15px 10px 30px;
+    position: relative;
+}
+
+.menu__icon {
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.menu__category {
+    vertical-align: middle;
+}
+
+.menu__item::after {
+    content: "";
+    background: url(../img/menu-item-arrow.svg) no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 15px;
+    top: 18px;
+    vertical-align: middle;
+    transition: all 0.3s;
+}
+
+.menu__item:hover:after {
+    position: absolute;
+    right: 5px;
+    content: "";
+    background: url(../img/menu-item-black-arrow.svg) no-repeat;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.menu__item:hover .sub-menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.sub-menu {
+    position: absolute;
+    left: 100%;
+    top: -100%;
+    height: 1000%;
+    min-width: 220px;
+    z-index: 0;
+    padding: 20px 20px 20px 30px;
+    min-width: 323px;
+    /* background-color: #fff; */
+    background-color: #f8f8f8;
+    border-radius: 0 8px 8px 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.sub-menu__list::before {
+    content: "";
+    position: absolute;
+    border-left: 5px solid #ffbc57;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+}
+
+
+.sub-menu__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+
+.sub-menu__link {
+    color: #2B2929;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 2.10526316; /* 40px/19 */
+}
+
+.sub-menu__link:hover {
+    text-decoration: 5px underline;
+    text-decoration-color: #FFBC57;
+}
+
+footer h3 {
+    text-align: center;
+    font-size: 48px;
+    text-transform: capitalize;
+}
