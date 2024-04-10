@@ -143,10 +143,9 @@ header {
     font-size: 20px;
     font-weight: 600;
     line-height: 1.4; /* 28px/20 */
-    padding: 10px 15px 10px 30px;
+    padding: 10px 54px 10px 30px;
     position: relative;
     width: 100%;
-    padding-right: 54px;
 }
 
 .menu__icon {
