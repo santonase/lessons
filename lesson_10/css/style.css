@@ -17,6 +17,8 @@ header {
     margin-bottom: 50px;
     padding: 20px 0;
     z-index: 50;
+    background-color: grey;
+    border-radius: 10px;
 }
 
 .wrapper {
@@ -37,11 +39,6 @@ header {
     border-radius: 8px;
     box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
     background: url(../img/bg.webp) 0 bottom no-repeat;
-}
-
-.page__text {
-    text-align: center;
-    line-height: 1.5;
 }
 
 .card__title {
@@ -192,6 +189,7 @@ header {
     visibility: hidden;
     opacity: 0;
     height: 100%;
+    overflow: hidden;
 }
 
 .sub-menu__list::before {
@@ -220,4 +218,16 @@ header {
 .sub-menu__link:hover {
     text-decoration: 5px underline;
     text-decoration-color: #FFBC57;
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+.block  {
+    width: 200px;
+    min-height: 500px;
+    background-color: #cfce89;
+    border-radius: 10px;
+    overflow: hidden;
 }
