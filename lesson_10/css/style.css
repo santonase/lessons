@@ -127,6 +127,7 @@ header {
     display: block;
     position: absolute;
     min-width: 300px;
+    max-width: 400px;
     top: calc(100% + 10px);
     left: 0;
     background-color: #f8f8f8;
@@ -184,12 +185,13 @@ header {
     top: 0;
     padding: 20px 20px 20px 30px;
     min-width: 323px;
+    max-width: 400px;
     background-color: #f8f8f8;
     border-radius: 0 8px 8px 0;
     visibility: hidden;
     opacity: 0;
     height: 100%;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .sub-menu__list::before {
@@ -201,7 +203,6 @@ header {
     width: 5px;
     height: calc(100% - 16px);
 }
-
 
 .sub-menu__item:not(:last-child) {
     margin-bottom: 10px;
