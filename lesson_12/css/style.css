@@ -133,7 +133,8 @@ body {
     position: relative;
     width: 100%;
     min-height: 500px;
-    animation: move 5s 2s linear;
+    animation: move 5s 3s linear forwards,
+    move-back 2s 8s linear forwards;
 }
 
 .car__body {
@@ -269,10 +270,11 @@ body {
     border-top: 35px solid transparent;
     border-bottom: 35px solid transparent;
     border-radius: 0 25px 25px 0;
-    transition: all 0.5s;
+    transition-duration: 0.8s;
 }
 
 .car__roof-light:hover {
+    transition-duration: 0.8s;
     box-shadow:
     65px 0px 15px yellow,
     130px 0px 25px yellow,
@@ -289,7 +291,7 @@ body {
     border: 7px dashed #333;
     z-index: 2;
     transition: all 0.5s;
-    animation: wheels 2s ease-in-out 1 forwards, rotate 5s linear 3s;
+    animation: wheels 3s ease-in-out 1 forwards, rotate 5s 3s linear forwards;
 }
 
 .car__wheel--back-first {
@@ -348,11 +350,12 @@ body {
     border-radius: 10px;
     left: 0px;
     bottom: 215px;
-    transition: all 0.5s;
+    transition-duration: 0.8s;
     animation: back-light 1s ease-in forwards;
 }
 
 .car__back-light:hover {
+    transition-duration: 0.8s;
     background-color: rgba(255, 0, 0, 0.451);
     box-shadow: 
     inset -5px -5px 10px white,
@@ -368,11 +371,12 @@ body {
     border-radius: 7px;
     left: 632px;
     bottom: 200px;
-    transition: all 0.5s;
-    animation: front-light 1s 1 ease-in forwards;
+    transition-duration: 0.8s;
+    animation: front-light 1s ease-in forwards;
 }
 
 .car__front-light:hover {
+    transition-duration: 0.8s;
     border-left: 68px solid yellow;
     box-shadow: 68px 5px 45px yellow;
 }
@@ -385,7 +389,7 @@ body {
     height: 25px;
     background-color: #797373;
     border-radius: 5px 0 0 5px;
-    animation: bumper 1s 1 ease-in forwards;
+    animation: bumper 2s ease-in forwards;
 }
 
 @keyframes wheels {
@@ -503,3 +507,25 @@ body {
         transform: translate(1500px,15px);
     }
 }
+
+@keyframes move-back {
+    0% {
+        transform: rotate(-60deg) translateX(1500px);
+    }
+    20% {
+        transform: rotate(-120deg) translate(1200px);
+    }
+    40% {
+        transform: rotate(-180deg) translate(900px);
+    }
+    60% {
+        transform: rotate(-240deg) translate(600px);
+    }
+    80% {
+        transform: rotate(-300deg) translate(300px);
+    }
+    100% {
+        transform: rotate(-360deg) translate(0,15px);
+    }
+}
+
