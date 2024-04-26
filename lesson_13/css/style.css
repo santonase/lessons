@@ -340,10 +340,13 @@ body {
 .item__top-wrapper {
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
+    flex: 1 1 auto;
 }
+
 .item__category {
     color: #2B2929;
-    max-width: 80%;
+    max-width: 70%;
 }
 
 .item__count {
@@ -351,8 +354,8 @@ body {
 }
 
 .item__img-main {
-    width: 100%;
     border-radius: 8px;
+    width: 100%;
 }
 
 .item__img-arrow {
