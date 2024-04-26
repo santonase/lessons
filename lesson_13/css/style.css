@@ -318,9 +318,11 @@ body {
 }
 
 .row__item {
+    display: flex;
+    flex-direction: column;
     position: relative;
     width: 250px;
-    height: 300px;
+    min-height: 300px;
     border-radius: 8px;
     padding: 20px;
     font-size: 20px;
@@ -342,6 +344,7 @@ body {
 }
 .item__category {
     color: #2B2929;
+    max-width: 80%;
 }
 
 .item__count {
@@ -431,7 +434,7 @@ body {
     padding: 20px;
     flex-direction: column;
     width: 300px;
-    height: 468px;
+    min-height: 468px;
     border-radius: 8px;
     border: 1px solid #E3E2E2;
     background: #FFF;
@@ -444,6 +447,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     flex: 1 0 auto;
+    gap: 10px;
 }
 
 .most-popular__item:hover {
@@ -481,7 +485,6 @@ body {
     font-size: 19px;
     font-weight: 600;
     line-height: 1.26315789;
-    text-overflow: ellipsis;
 }
 
 .most-popular__check {
@@ -572,8 +575,6 @@ body {
     transform: scale(1.2);
     transition: all 0.3s;
 }
-
-
 
 .row-item__img {
     width: 100%;
