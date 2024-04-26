@@ -321,8 +321,7 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 250px;
-    min-height: 300px;
+    flex-basis: 250px;
     border-radius: 8px;
     padding: 20px;
     font-size: 20px;
@@ -433,8 +432,7 @@ body {
     gap: 20px;
     padding: 20px;
     flex-direction: column;
-    width: 300px;
-    min-height: 468px;
+    flex-basis: 300px;
     border-radius: 8px;
     border: 1px solid #E3E2E2;
     background: #FFF;
@@ -574,6 +572,11 @@ body {
 .shares__arrow-wrapper .shares__img:hover {
     transform: scale(1.2);
     transition: all 0.3s;
+}
+
+.shares__sub-title .sub-title__link:hover,
+.most-popular__sub-title .sub-title__link:hover {
+    text-decoration: underline;
 }
 
 .row-item__img {
