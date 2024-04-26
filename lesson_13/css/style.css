@@ -36,6 +36,12 @@ body {
     gap: 30px;
     color: #535353;
     line-height: 1.875; /* 30px/16 */
+    transition: all 0.5s;
+}
+
+.header__menu .menu__item:hover {
+    color: #FFBC57;
+    transition: all 0.5s;
 }
 
 .header__right-side {
@@ -58,6 +64,13 @@ body {
 .header__messangers .messangers__icon {
     height: 30px;
     width: 30px;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.header__messangers .messangers__icon:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
 }
 
 
@@ -163,6 +176,12 @@ body {
 
   .header__icon {
     margin-right: 30px;
+    transition: all 0.3s;
+  }
+
+  .header__icon .icon__tel:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
   }
 
   .contacts__schedule {
@@ -193,6 +212,22 @@ body {
     gap: 20px;
   }
 
+  .header__shopping .shopping__icon {
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s;
+    border-radius: 50%;
+  }
+
+  .header__shopping .shopping__icon:hover {
+    transition: all 0.3s;
+    transform: scale(1.2);
+    background-color: #a09b9b;
+    border-radius: 50%;
+  }
+
+
+
   .header__bottom {
     background-color: #fff;
     padding: 18px 0;
@@ -201,20 +236,13 @@ body {
 .bottom-header__container {
     display: flex;
     align-items: center;
-    color: #535353;
-    font-size: 19px;
-    font-weight: 600;
-    line-height: 1.26315789; /* 24px/19 */
 }
 
 .bottom-header__menu-sales {
     display: flex;
     align-items: center;
     margin-right: 100px;
-}
-
-.bottom-header__menu-sales .menu-sales__item:not(:last-child) {
-    margin-right: 41px;
+    gap: 41px;
 }
 
 .bottom-header__menu-sales .menu-sales__img {
@@ -223,15 +251,39 @@ body {
     margin-right: 5px;
 }
 
+.bottom-header__menu-sales .menu-sales__text {
+    color: #535353;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.26315789;
+    transition: all 0.5s;
+}
+
+.bottom-header__menu-sales .menu-sales__text:hover {
+    color: #FFBC57;
+    transition: all 0.5s;
+}
+
 .bottom-header__menu-categories {
     display: flex;
     gap: 40px;
 }
 
-.page {
+.bottom-header__menu-categories .menu-categories__link {
+    color: #535353;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.26315789;
+    transition: all 0.5s;
 }
+
+.bottom-header__menu-categories .menu-categories__link:hover {
+    color: #FFBC57;
+    transition: all 0.5s;
+}
+
 .page__container {
-    padding: 5px 0 0 0;
+    padding: 30px 0 0 0;
 }
 .page__category-used {
     display: flex;
@@ -239,8 +291,7 @@ body {
     line-height: 1.875;
     margin-bottom: 30px;
 }
-.category-used {
-}
+
 .category-used__main-page {
     color: #535353;
 }
@@ -324,21 +375,40 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    margin-bottom: 80px;
 }
 
-.most-popular__title-wrapper {
+.shares__box-title {
+    display: flex;
+    align-items: center;
+}
+
+.most-popular__title-wrapper,
+.shares__title-wrapper {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
 }
-.most-popular__title {
+
+.shares__title-wrapper {
+    justify-content: space-between;
+}
+
+.shares__arrow-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.most-popular__title,
+.shares__title {
     color: #2B2929;
     font-size: 40px;
     font-weight: 600;
     line-height: 1.2;
     margin-right: 30px;
 }
-.most-popular__sub-title {
+.most-popular__sub-title,
+.shares__sub-title {
     color: #FFBC57;
     font-size: 19px;
     font-weight: 600;
@@ -346,7 +416,8 @@ body {
     vertical-align: middle;
 }
 
-.most-popular__sub-title::after {
+.most-popular__sub-title::after,
+.shares__sub-title::after {
     content: '';
     width: 24px;
     height: 24px;
@@ -410,6 +481,7 @@ body {
     font-size: 19px;
     font-weight: 600;
     line-height: 1.26315789;
+    text-overflow: ellipsis;
 }
 
 .most-popular__check {
@@ -462,4 +534,47 @@ body {
 .icon-wrapper__img {
     width: 50px;
     height: 50px;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.icon-wrapper__img:hover {
+    transition: all 0.3s;
+    transform: scale(1.2);
+}
+
+.shares {
+    padding: 6px 0 70px 0;
+}
+
+.shares__row {
+    display: flex;
+    gap: 30px;
+}
+.shares__row-item {
+    width: 410px;
+    transition: all 0.3s;
+}
+
+.shares__row-item:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+
+.shares__arrow-wrapper .shares__img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.shares__arrow-wrapper .shares__img:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+
+
+.row-item__img {
+    width: 100%;
 }
