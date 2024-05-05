@@ -1,0 +1,245 @@
+/* FONTS */
+@import url(fonts.css);
+
+/* reset style */
+@import url("reset.css");
+
+[class*="__container"] {
+    max-width: 750px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+}
+
+body {
+    background-color: #f8f8f8;
+    font-family: "Proxima Nova";
+}
+
+.page {
+}
+.page__container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.page__info,
+.page__delivery,
+.page__pay,
+.page__comment {
+    background: #FFF;
+    border-radius: 8px;
+    box-shadow: -3px 4px 15px 0px rgba(0, 0, 0, 0.06);
+    padding: 27px 30px 30px 30px;
+}
+.info {
+}
+
+.page__title-wrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.page__title-wrapper:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.title__img {
+    flex: 0 0 60px;
+}
+.info__title {
+}
+
+.title {
+    color: #2B2929;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 130.769231%;
+}
+
+.page__input {
+    margin-bottom: 20px;
+}
+.input__form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 30px;
+}
+
+.input__surname,
+.input__tel,
+.input__name,
+.input__mail,
+.input__father-name {
+    display: flex;
+    width: 325px;
+    padding: 10px 20px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid #D1D5D5;
+    background: #FFF;
+    color: var(--Theme-Grey, #535353);
+    line-height: 30px; /* 187.5% */
+}
+
+.info__choice {
+}
+.choice__checkbox {
+}
+.checkbox {
+    position: relative;
+    cursor: pointer;
+}
+.checkbox__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.checkbox__text {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #535353;
+    line-height: 1.875;
+}
+
+.checkbox__text::before {
+    content: "";
+    transition: all 0.3s;
+    flex-shrink: 0;
+    height: 24px;
+    width: 24px;
+    border: 1px solid #d1d5d5;
+}
+
+.checkbox__input:checked + .checkbox__text::before {
+	background-color: #ffbc57;
+    transition: all 0.3s;
+}
+
+.delivery__choice {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+.choice__radio-label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 210px;
+    padding: 20px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 3px solid #F8F8F8;
+}
+.radio {
+    position: relative;
+    cursor: pointer;
+}
+
+.radio__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.radio__text {
+    color: #2B2929;
+    text-align: center;
+    line-height: 1.875;
+    text-align: center;
+}
+
+.radio__sub-text {
+    color: #535353;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.46666667;
+}
+
+.radio__img {
+    flex: 0 0 40px;
+}
+
+.radio__text::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: url(../img/radio-check.svg);
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+.choice__radio-label:hover {
+    background-color: #f8f8f8;
+    transition: all 0.3s;
+ }
+
+ .radio__input:checked ~ .radio__text::before {
+    transition: all 0.3s;
+    visibility: visible;
+    opacity: 1;
+    border-color: #ffbc57;
+ }
+
+ .radio__input:checked ~ img {
+    visibility: hidden;
+    opacity: 0;
+ }
+
+ .delivery__schedule {
+}
+.schedule {
+    border-radius: 8px;
+    background: #F8F8F8;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.schedule__icon {
+    margin-right: 20px;
+}
+.schedule__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    flex: 1 0 auto;
+}
+.schedule__time {
+    color: #2B2929;
+    line-height: 1.875;
+}
+.schedule__address {
+    color: #2B2929;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.40;
+}
+.schedule__button {
+}
+.button {
+}
+.button__text {
+}
