@@ -200,7 +200,6 @@ body {
     transition: all 0.3s;
     visibility: visible;
     opacity: 1;
-    border-color: #ffbc57;
  }
 
  .radio__input:checked ~ img {
@@ -208,15 +207,18 @@ body {
     opacity: 0;
  }
 
+ .choice__radio-label:has( > .radio__input:checked) {
+    border-color: #ffbc57;
+ }
+
  .delivery__schedule {
-}
-.schedule {
     border-radius: 8px;
     background: #F8F8F8;
     padding: 20px;
     display: flex;
     align-items: center;
 }
+
 .schedule__icon {
     margin-right: 20px;
 }
@@ -238,8 +240,27 @@ body {
     line-height: 1.40;
 }
 .schedule__button {
+    display: inline-flex;
+    padding: 13px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #FFBC57;
 }
-.button {
+
+.button__link::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background: url(../img/delivery-button-icon.svg) 0 -2px / 100% no-repeat;
+    vertical-align: middle;
+    margin-right: 10px;
 }
+
 .button__text {
+    color: #FFF;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.26315789;
+    vertical-align: middle;
 }
