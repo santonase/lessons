@@ -51,7 +51,8 @@ body {
 }
 
 .title__img {
-    flex: 0 0 60px;
+    width: 60px;
+    height: 60px;
 }
 .info__title {
 }
@@ -174,7 +175,8 @@ body {
 }
 
 .radio__img {
-    flex: 0 0 40px;
+    height: 40px;
+    width: 40px;
 }
 
 .radio__text::before {
@@ -309,7 +311,8 @@ body {
 }
 
 .list__img {
-    flex: 0 0 48px;
+    width: 48px;
+    height: 32px;
 }
 
 .list__input:checked + .list__text::before {
