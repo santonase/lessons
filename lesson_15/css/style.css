@@ -164,7 +164,7 @@ body {
     margin-right: 30px;
   }
 
-  .middle__link {
+  .shopping__icon--search {
     display: none;
 }
   
@@ -200,6 +200,11 @@ body {
   }
 
   .header__icon .icon__tel:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
+  }
+
+  .top__icon-tel:hover {
     transform: scale(1.2);
     transition: all 0.3s;
   }
@@ -619,11 +624,20 @@ body {
     width: 100%;
 }
 
-@media (max-width:385px) {
-	.top__container {
-		flex-direction: column;
-	}
+.top__link {
+    display: none;
 }
+
+.top__burger-menu {
+    display: none;
+}
+.top__logo {
+    display: none;
+}
+.top__icon-tel {
+    display: none;
+}
+
 
     @media (max-width:966px) {
         .top__container {
@@ -644,40 +658,30 @@ body {
         }
     }
 
-@media (max-width:1072px) {
-            .header__search {
-                display: none;
-            }
-            .header__btn {
-                flex: 1 1 auto;
-                min-width: 145px;
-            }
-            .header__btn span {
-                text-align: center;
-            }
-            .header__link-logo {
-                flex: 0 1 auto;
-                min-width: 100px;
-            }
-            .middle__link {
-                display: block;
-            }
+    @media (max-width:1092px) {
+        .header__search {
+            display: none;
         }
+        .header__btn {
+            flex: 1 1 auto;
+            min-width: 145px;
+        }
+        .header__btn span {
+            text-align: center;
+        }
+        .header__link-logo {
+            flex: 0 1 auto;
+            min-width: 100px;
+        }
+        .shopping__icon--search {
+            display: block;
+        }
+    }
 
 @media (max-width:932px) {
     .contacts {
         display: none;
     }
-}
-
-.top__burger-menu {
-    display: none;
-}
-.top__logo {
-    display: none;
-}
-.top__icon-tel {
-    display: none;
 }
 
 @media (max-width:743px) {
@@ -709,6 +713,9 @@ body {
         gap: 47px;
         justify-content: space-between;
     }
+    .top__link {
+        display: block;
+    }
     .top__burger-menu {
         display: block;
     }
@@ -718,9 +725,6 @@ body {
     .top__icon-tel {
         display: block;
     }
-}
-
-@media (max-width:719px) {
     .header__bottom {
         display: none;
     }
@@ -738,6 +742,11 @@ body {
     }
     .middle__right-side {
         justify-content: center;
-    }
-    
+    }   
+}
+
+@media (max-width:385px) {
+	.top__container {
+		flex-direction: column;
+	}
 }
