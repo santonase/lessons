@@ -692,6 +692,9 @@ body {
     .header__icon {
         display: none;
     }
+    .header__btn {
+        margin-right: 0;
+    }
     .header__link-logo {
         display: none;
     }
